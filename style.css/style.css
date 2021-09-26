@@ -1,0 +1,56 @@
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    position: fixed;
+    top: 50px;
+    left: 500px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: rgb(255, 208, 0)
+}
+
+.box-one, .box-two {
+    border-radius: 50%;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    z-index: 10;
+    background-color: #fff;
+}
+
+.box-one {
+    left: 80px;
+}
+
+.box-two {
+    right: 80px;
+}
+
+.box-three, .box-four {
+    position: absolute;
+    border-radius: 50%;
+    width: 320px;
+    height: 320px;
+    left: 90px;
+}
+
+.box-three {
+    bottom: 35px;
+    background-color: #fff;
+}
+
+.box-four {
+    z-index: 5;
+    bottom: 70px;
+    background-color: rgb(255, 208, 0);
+}
